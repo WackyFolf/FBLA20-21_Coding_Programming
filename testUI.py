@@ -3,13 +3,19 @@ from tkinter import *
 import sys
 
 root = Tk()
-def buttonAction():
-    sys.exit()
-    print("Button pressed")
-label1 = Label(root, text="How are you")
-button = Button(root, text="Exit", padx=50, command=buttonAction).grid(row=1,column=1)
-label2 = Label(root, text="Hello world").grid(row=2,column=2)
+root.title('UI Testing')
+frame = LabelFrame(root, padx=5, pady=5, text="Start a Quiz")
+frame.pack(padx=10, pady=10, side = LEFT)
+frame2 = LabelFrame(root, padx=5, pady=5, text="End This Program")
+frame2.pack(padx=10, pady=10, side = RIGHT)
 
-label1.grid(row=0,column=0)
-
+def exitProgram():
+    sys.exit() 
+b = Button(frame, text="Button")
+b.grid(row=1, column=0)
+b2 = Button(frame, text="Button")
+b2.grid(row=1, column=1)
+b3 = Button(frame2, text="Exit", command=exitProgram)
+b3.grid(row=0, column=0)
+label = Label(frame, text="I am a label").grid(row=0,column=0)
 root.mainloop()
