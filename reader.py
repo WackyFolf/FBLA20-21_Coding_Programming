@@ -1,10 +1,11 @@
 import json
 
 class reader:
-    def __init__(self, want):
+    def __init__(self, want, num):
         self.want = want
-    def read(self, want):
-        with open ("test.json", "r") as f:  # Open file for reading
+        self.num = num
+    def read(self, want, num):
+        with open ("quizzes/test.json", "r") as f:  # Open file for reading
             data = json.load(f)
-        return(data["1"][want]) # Return data from JSON to UI program
+        return(data[num][want]) # Return data from JSON to UI program
             
