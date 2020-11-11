@@ -1,0 +1,73 @@
+{
+	"questions" : "10",
+    "1": {
+        "ques": "Visual Basic is considered a(n):",
+        "ans": "language",
+        "alt1": "number",
+        "alt2": "alphabet",
+        "alt3": "macro"
+    },
+    "2": {
+        "ques": "Identify the program that coordinates computer resources, provides an interface between the computer and users, and runs applications.",
+        "ans": "operating system",
+        "alt1": "application software",
+        "alt2": "device driver",
+        "alt3": "systems software" 
+    },
+    "3": {
+        "ques": "When an object is linked, where is the data stored?",
+        "ans": "source file",
+        "alt1": "active file",
+        "alt2": "auto file",
+        "alt3": "inactive file"
+    },
+    "4": {
+        "ques": "Which character designates a cell reference as absolute?",
+        "ans": "$",
+        "alt1": "@",
+        "alt2": "^",
+        "alt3": "#"
+    },
+    "5": {
+        "ques": "To arrange the fields of records in descending order, you must:",
+        "ans": "sort",
+        "alt1": "cut and paste",
+        "alt2": "filter",
+        "alt3": "edit"
+    },
+    "6": {
+        "ques": "Which one of the followingcannotbe created using Office PowerPoint?",
+        "ans": "databases",
+        "alt1": "slides",
+        "alt2": "handouts",
+        "alt3": "ouline"
+    },
+    "7": {
+        "ques": "A non-text element or object, such as a picture or drawing that can be added to a document is referred to as:",
+        "ans": "graphic",
+        "alt1": "diagram",
+        "alt2": "visual",
+        "alt3": "data"
+    },
+    "8": {
+        "ques": "___________________ is posting something in many places at the same time or sending/receiving unsolicited e-mails.",
+        "ans": "spamming",
+        "alt1": "ruling",
+        "alt2": "flaming",
+        "alt3": "emotion"
+    },
+    "9": {
+        "ques": "When should virus software be updated?",
+        "ans": "every time you log on",
+        "alt1": "once each day",
+        "alt2": "once a week",
+        "alt3": "only when ISP tells you to"
+    },
+    "10": {
+        "ques": "To create an online form in which all responses are either Yes or No, it would be best to use a form with:",
+        "ans": "check box form fields",
+        "alt1": "text form box fields",
+        "alt2": "drop-down list fields",
+        "alt3": "blank line created with underline tabs"
+    }
+}
