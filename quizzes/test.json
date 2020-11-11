@@ -1,0 +1,23 @@
+{
+    "1": {
+        "ques": "What is my name?",
+        "ans": "Evan",
+        "alt1": "John",
+        "alt2": "Sam",
+        "alt3": "Michael"
+    },
+    "2": {
+        "ques": "What is my name online?",
+        "ans": "WackyFolf",
+        "alt1": "Captain_fry01",
+        "alt2": "xX_EpicRobloxGamer_Xx",
+        "alt3": "xaleian_" 
+    },
+    "3": {
+        "ques": "What does FBLA stand for?",
+        "ans": "Future Business Leaders of America (couldn't be me)",
+        "alt1": "Flight Bookers Los Angeles",
+        "alt2": "Frequently Broken Lamp Accessories",
+        "alt3": "Freshly Baked Limp Asparagus"
+    }
+}
