@@ -8,5 +8,6 @@ class quizUI:
 
     def openQuiz(self, quiz):
         root = Tk()
-        root.title('Quiz')
+        root.title(quiz)
+        print(quiz)
         root.mainloop()
