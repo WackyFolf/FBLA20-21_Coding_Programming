@@ -9,4 +9,8 @@ class reader:
         with open ("quizzes/"+quiz+".json", "r") as f:  # Open file for reading
             data = json.load(f)
         return(data[num][want]) # Return data from JSON to UI program
+    def numberquesions(self, quiz):
+        with open ("quizzes/"+quiz+".json", "r") as f:  # Open file for reading
+            dataT = json.load(f)
+        return(int(dataT['questions'])) # Return number of questions from quiz
             
