@@ -53,13 +53,7 @@ options.grid(row=1,column=0)
 def openQuiz(quiz):
     quizUI.openQuiz(quiz)
     print(variable.get())
-optionDict = {
-    "Test Quiz": "testquiz",
-    "Computer Applications": "computerapps",
-    "Alternate 1": "alt1",
-    "Alternate 2": "alt2",
-    "Alternate 3": "alt3"
-}
+
 
 b = Button(frame, text="Begin Quiz", command=partial(openQuiz,variable.get()))
 b.grid(row=2, column=0)
