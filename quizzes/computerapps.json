@@ -36,7 +36,7 @@
         "alt3": "edit"
     },
     "6": {
-        "ques": "Which one of the followingcannotbe created using Office PowerPoint?",
+        "ques": "Which one of the following cannot be created using Office PowerPoint?",
         "ans": "databases",
         "alt1": "slides",
         "alt2": "handouts",
@@ -57,7 +57,7 @@
         "alt3": "emotion"
     },
     "9": {
-        "ques": "When should virus software be updated?",
+        "ques": "When should anti-virus software be updated?",
         "ans": "every time you log on",
         "alt1": "once each day",
         "alt2": "once a week",
