@@ -1,4 +1,5 @@
 import tkinter
+import random
 from tkinter import *
 from reader import reader
 reader = reader("ques", "1", "test")
@@ -15,14 +16,18 @@ class quizUI:
 
     def openQuiz(self, quiz):
         root = Tk()
-        quiz = optionDict[quiz]
-        root.title(quiz)
-        numOfQuesions = reader.numberquesions(quiz)
+        actualQuiz = optionDict[quiz]
+        root.title(quiz + " Quiz")
+        numOfQuesions = reader.numberquesions(actualQuiz)
         labelText = ''
-        q = 1
+        q = []
+        y = 0
+        questionDict = reader.getFile(actualQuiz)
+        for x in range(1, numOfQuesions + 1):
+            q.append(x)
+        random.shuffle(q)
         for x in range(0, numOfQuesions):
-            labelText = labelText + ' ' + reader.read("ques", str(q), quiz)
-            q = q + 1
-        label = Label(root, text=labelText).pack()
-        print(quiz)
+           labelText = labelText + questionDict[(str(q[x]))]['ques'] + " \\ " + questionDict[(str(q[x]))]['ans'] + "\n"
+           y = y + 1
+        label = Label(root, text=labelText, justify="left", wraplength=(800)).pack()
         root.mainloop()
