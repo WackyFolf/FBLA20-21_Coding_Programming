@@ -13,4 +13,6 @@ class reader:
         with open ("quizzes/"+quiz+".json", "r") as f:  # Open file for reading
             dataT = json.load(f)
         return(int(dataT['questions'])) # Return number of questions from quiz
-            
+    def getFile(self, quiz):
+        with open ("quizzes/"+quiz+".json", "r") as f:  # Open file for reading
+            return(json.load(f))
