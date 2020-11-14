@@ -33,6 +33,7 @@ def declareLicenseClosed():
     global licenseOpen
     licenseOpen = False # This funcion is here because buttons are stupid, define the license window as closed when it is closed
 def license():
+    print (variable.get())
     global licenseOpen
     with open ("LICENSE", "r") as licenseFile:
         licenseText = licenseFile.read() # Open LICENSE file and set variable to its contents
@@ -51,11 +52,11 @@ def license():
 options = OptionMenu(frame, variable, *quizOptions)  
 options.grid(row=1,column=0)      
 def openQuiz(quiz):
-    quizUI.openQuiz(quiz)
     print(variable.get())
+    quizUI.openQuiz(quiz)
 
 
-b = Button(frame, text="Begin Quiz", command=partial(openQuiz,variable.get()))
+b = Button(frame, text="Begin Quiz", command=lambda: openQuiz(variable.get()))
 b.grid(row=2, column=0)
 b3 = Button(frame2, text="Exit", command=exitProgram)
 b3.grid(row=0, column=1, padx=10, pady=10)
