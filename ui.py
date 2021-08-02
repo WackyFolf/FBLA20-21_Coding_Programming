@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Evan Sonin
+# Copyright (c) 2020 Evan 
 import tkinter
 from tkinter import *
 from reader import reader
