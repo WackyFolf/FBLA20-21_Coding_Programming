@@ -45,7 +45,6 @@ def license():
         licenseWindow.resizable(width=False, height=False) # Disable resizing of the license window
         licenseWindow.iconbitmap('icons/license.ico') # Add nifty icon to the license window
         licenseWindow.protocol("WM_DELETE_WINDOW", uselessDef) # Assign the close button of the window to do absolutely nothing when pressed
-        licenseWindow.title('MIT License © 2020 Evan Sonin')
         labelLicense = Label(licenseWindow, text=licenseText, padx=10, pady=10, relief="ridge", justify='center').pack()
         exitButton = Button(licenseWindow, text="Close", command=lambda:[declareLicenseClosed(),licenseWindow.destroy()]).pack(anchor=CENTER, pady=10) # The button calls the function to define the window as closed, then closes it
         licenseWindow.mainloop()
